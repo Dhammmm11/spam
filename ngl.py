@@ -8,7 +8,7 @@
  ╚████╔╝ ╚██████╔╝██║██████╔╝   ██║ ╚████║╚██████╔╝██║  ██╗███████╗██║  ██║
   ╚═══╝   ╚═════╝ ╚═╝╚═════╝    ╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
 VOID NUKER - Ultimate NGL Spammer v4.0
-Developer: Marr | Termux Optimized
+Developer: Marr 
 """
 
 import subprocess
@@ -473,8 +473,8 @@ def main_menu():
         print_colored(f"\n╔══════════════════════════════════════╗", Colors.CYAN)
         print_colored(f"║            MAIN MENU               ║", Colors.WHITE)
         print_colored(f"╠══════════════════════════════════════╣", Colors.CYAN)
-        print_colored(f"║ 1️⃣  Quick Attack                   ║", Colors.GREEN)
-        print_colored(f"║ 2️⃣  Custom Attack                  ║", Colors.YELLOW)
+        print_colored(f"║ 1️⃣  Plenger Attack                   ║", Colors.GREEN)
+        print_colored(f"║ 2️⃣  Custom Attack Bwabwa                 ║", Colors.YELLOW)
         print_colored(f"║ 3️⃣  View Results                   ║", Colors.BLUE)
         print_colored(f"║ 4️⃣  Exit                          ║", Colors.RED)
         print_colored(f"╚══════════════════════════════════════╝", Colors.CYAN)
@@ -589,7 +589,7 @@ if __name__ == "__main__":
         print_colored(f"\n[*] VOID NUKER v{VERSION} - Ready for Action!", Colors.GREEN)
         print_colored(f"[*] Developer: {DEVELOPER}", Colors.CYAN)
         print_colored(f"[*] Platform: Termux (Android)", Colors.YELLOW)
-        print_colored(f"[!] For educational purposes only", Colors.RED)
+        print_colored(f"[!] Hanya Untuk Edukasi", Colors.RED)
         time.sleep(2)
         
         # Start main menu

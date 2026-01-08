@@ -472,8 +472,8 @@ def main_menu():
         
         print_colored(f"\n╔═════════════════════════════════════╗", Colors.CYAN)
         print_colored(f"  ║            MAIN MENU                       ║", Colors.WHITE)
-        print_colored(f"  ╠═════════════════════════════════════╣, Colors.CYAN)
-        print_colored(f"  ║ 1️⃣  Plenger Attack                         ║, Colors.GREEN)
+        print_colored(f"  ╠═════════════════════════════════════╣", Colors.CYAN)
+        print_colored(f"  ║ 1️⃣  Plenger Attack                         ║", Colors.GREEN)
         print_colored(f"  ║ 2️⃣  Custom Attack Bwabwa                   ║", Colors.YELLOW)
         print_colored(f"  ║ 3️⃣  View Results                           ║", Colors.BLUE)
         print_colored(f"  ║ 4️⃣  Exit                                   ║", Colors.RED)

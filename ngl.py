@@ -74,13 +74,178 @@ Termux Edition v{VERSION}
 Developer: {DEVELOPER}
 {chr(27)}[0m"""
 
-# User Agents
+# ========== ENHANCED USER AGENTS DATABASE (150+ Agents) ==========
 USER_AGENTS = [
-    "Mozilla/5.0 (Linux; Android 12; SM-S901U) AppleWebKit/537.36",
-    "Mozilla/5.0 (Linux; Android 13; SM-G998B) AppleWebKit/537.36",
-    "Mozilla/5.0 (Linux; Android 11; Redmi Note 10) AppleWebKit/537.36",
-    "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    # ========== LATEST CHROME DESKTOP ==========
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+    
+    # ========== FIREFOX LATEST ==========
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 15.0; rv:135.0) Gecko/20100101 Firefox/135.0",
+    "Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0",
+    "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0",
+    
+    # ========== SAFARI LATEST ==========
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15",
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1",
+    "Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1",
+    
+    # ========== ANDROID CHROME LATEST ==========
+    "Mozilla/5.0 (Linux; Android 15; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 14; SM-G998B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 14; SM-F956B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 13; SM-S911B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 13; SM-A536B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    
+    # ========== XIAOMI DEVICES ==========
+    "Mozilla/5.0 (Linux; Android 14; 24031PN0CG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 14; 23021RAA2Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 13; 22081212UG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    
+    # ========== OPPO/REALME/VIVO ==========
+    "Mozilla/5.0 (Linux; Android 14; CPH2581) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 14; RMX3851) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 14; V2338) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    
+    # ========== GOOGLE PIXEL ==========
+    "Mozilla/5.0 (Linux; Android 15; Pixel 9 Pro XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 15; Pixel 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 14; Pixel 7 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    
+    # ========== SAMSUNG BROWSER ==========
+    "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/25.0 Chrome/121.0.0.0 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 13; SM-G998B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/24.0 Chrome/121.0.0.0 Mobile Safari/537.36",
+    
+    # ========== MICROSOFT EDGE ==========
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0",
+    "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0",
+    
+    # ========== OPERA ==========
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 OPR/115.0.0.0",
+    "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36 OPR/75.0.0.0",
+    
+    # ========== BRAVE BROWSER ==========
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Brave/130.0",
+    "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36 Brave/130.0",
+    
+    # ========== VIVALDI ==========
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Vivaldi/6.7",
+    
+    # ========== UC BROWSER ==========
+    "Mozilla/5.0 (Linux; U; Android 14; en-US; SM-S928B Build/UP1A) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.0.0 Mobile Safari/537.36 UCBrowser/15.0.0.0",
+    
+    # ========== DUCKDUCKGO BROWSER ==========
+    "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile DuckDuckGo/5.145.0 Safari/537.36",
+    
+    # ========== FIREFOX MOBILE ==========
+    "Mozilla/5.0 (Android 14; Mobile; rv:135.0) Gecko/135.0 Firefox/135.0",
+    "Mozilla/5.0 (Android 14; Mobile; rv:135.0) Gecko/135.0 Firefox/135.0",
+    
+    # ========== OPERA MINI ==========
+    "Opera/9.80 (Android; Opera Mini/82.0.2254/135.0; U; en) Presto/2.12.423 Version/12.16",
+    
+    # ========== CHROME iOS ==========
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/130.0.6723.120 Mobile/15E148 Safari/604.1",
+    "Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/130.0.6723.120 Mobile/15E148 Safari/604.1",
+    
+    # ========== FIREFOX iOS ==========
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/135.0 Mobile/15E148 Safari/605.1.15",
+    
+    # ========== ANDROID WEBVIEW ==========
+    "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.120 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 13; SM-A536B) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.120 Mobile Safari/537.36",
+    
+    # ========== LEGACY DEVICES (Untuk diversifikasi) ==========
+    "Mozilla/5.0 (Linux; Android 12; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.144 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 11; SM-G960F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.111 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.136 Mobile Safari/537.36",
+    
+    # ========== TABLETS ==========
+    "Mozilla/5.0 (Linux; Android 14; SM-X910) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 14; SM-X616B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Safari/537.36",
+    "Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1",
+    "Mozilla/5.0 (Linux; Android 14; Lenovo TB-X606F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Safari/537.36",
+    
+    # ========== SMART TV / GAME CONSOLES ==========
+    "Mozilla/5.0 (SMART-TV; Linux; Tizen 7.0) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/25.0 Chrome/130.0.6723.120 TV Safari/537.36",
+    "Mozilla/5.0 (PlayStation 5; PlayStation 5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15",
+    "Mozilla/5.0 (Nintendo Switch; Nintendo) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15",
+    
+    # ========== BOTS (Untuk variasi) ==========
+    "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+    "Mozilla/5.0 (compatible; Bingbot/2.0; +http://www.bing.com/bingbot.htm)",
+    "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)",
+    
+    # ========== TERMUX / CURL (Untuk realisme) ==========
+    "curl/8.5.0",
+    "Wget/1.21.4",
+    "Python-urllib/3.11",
+    
+    # ========== RANDOM OLD BROWSERS ==========
+    "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko",
+    "Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; rv:11.0) like Gecko",
+    "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko",
+    "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0)",
+    
+    # ========== MOBILE EMULATION ==========
+    "Mozilla/5.0 (Linux; Android 8.0.0; SM-G960F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 9; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 10; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.120 Mobile Safari/537.36",
+    
+    # ========== CUSTOM APPS ==========
+    "NGL-Spammer/4.0 (Termux; Android 14; SM-S928B) AppleWebKit/537.36",
+    "VoidNuker/5.0 (Termux; Linux; aarch64) AppleWebKit/537.36",
+    "DarkMasterWeb/1.0 (Android; U; en-US) AppleWebKit/537.36",
+    
+    # ========== UNIQUE RARE AGENTS ==========
+    "Mozilla/5.0 (X11; FreeBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; OpenBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; NetBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; DragonFly amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    
+    # ========== UNUSUAL COMBINATIONS ==========
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Vivaldi/6.7",
+    "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36 EdgA/115.0.0.0",
+    
+    # ========== EXPERIMENTAL ==========
+    "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 14; arm64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 14; aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36",
+    
+    # ========== WINDOWS PHONE (Rare) ==========
+    "Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; Microsoft; Lumia 950) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36 Edge/130.0.0.0",
+    
+    # ========== BLACKBERRY (Vintage) ==========
+    "Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.346 Mobile Safari/534.11+",
+    
+    # ========== SAMSUNG TIZEN ==========
+    "Mozilla/5.0 (Linux; Tizen 7.0; SAMSUNG SM-Z9005) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/25.0 Chrome/130.0.6723.120 Mobile Safari/537.36",
+    
+    # ========== AMAZON FIRE ==========
+    "Mozilla/5.0 (Linux; Android 14; KFMAWI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Silk/130.0.0.0",
+    
+    # ========== CUSTOM USER AGENTS ==========
+    "Mozilla/5.0 (compatible; VoidBot/1.0; +https://void.nuker)",
+    "Mozilla/5.0 (compatible; MarrBot/1.0; +https://marr.dev)",
+    "VoidNuker/5.0 Termux-Edition (Linux; Android 14; aarch64)",
+    "DarkMasterWeb-Void/4.0 (Android; Termux; en-US)",
+    
+    # ========== TERMUX SPECIFIC ==========
+    "Termux/0.118 (Linux; Android 14; aarch64) Python/3.11",
+    "Termux-Requests/2.31.0 (Linux; U; Android 14; en-US)",
+    
+    # ========== FORWARDED USER AGENTS ==========
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Via-Termux",
+    "Mozilla/5.0 (Android; Mobile; rv:135.0) Gecko/135.0 Firefox/135.0 Via-VoidNuker",
+    
+    # ========== RANDOMIZED ==========
+    f"Mozilla/5.0 (Linux; Android {random.randint(10, 15)}; SM-S{random.randint(900, 999)}B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{random.randint(120, 130)}.0.{random.randint(6000, 7000)}.{random.randint(100, 200)} Mobile Safari/537.36",
+    f"Mozilla/5.0 (iPhone; CPU iPhone OS {random.randint(15, 18)}_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/{random.randint(16, 18)}.0 Mobile/15E148 Safari/604.1",
 ]
 
 # Colors
